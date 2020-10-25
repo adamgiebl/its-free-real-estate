@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap')
+
+$black: #2E2E2E
+$blue: #1EA7CB
+$darkgrey: #D6D6D6
+$lightgrey: #f9f9f9
+$lightblue: #6ba0a9
+
+*
+	margin: 0
+	padding: 0
+
+body
+	font-family: 'Raleway', sans-serif
+	font-weight: 300
+	color: $black
+
+button
+	cursor: pointer
+
+.wrapper
+	max-width: 900px
+	margin: auto
+	padding: 0 30px
+
+header
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	padding: 35px 0
+
+	h1
+		font-weight: 300
+
+	nav
+		font-size: 13px
+		font-weight: 500
+		vertical-align: middle
+		display: flex
+		align-items: center
+
+		.divider
+			font-size: 40px
+			line-height: 30px
+			font-weight: 300
+			color: lightgrey
+
+	.primary
+		background: transparent
+		border: 1px solid $blue
+		border-radius: 3px
+		padding: 0.5em 0.8em
+		font-size: 17px
+		color: $blue
+		font-family: 'Raleway', sans-serif
+		white-space: nowrap
+		font-weight: 300
+		transition: all .3s
+
+		&:hover
+			background: $blue
+			color: white
+
+.houses
+	display: grid
+	grid-gap: 30px
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
+
+	.house
+		border: 1px solid $darkgrey
+		border-radius: 3px
+		display: flex
+		flex-direction: column
+		img
+			width: 100%
+			display: block
+			height: 130px
+			object-fit: cover
+		.address
+			padding: 25px
+			flex-grow: 1
+			h2
+				font-weight: 300
+				text-align: center
+				font-size: 20px
+		.meta
+			background: $lightgrey
+			display: flex
+			justify-content: center
+			padding: 15px 0
+			.meta-item
+				text-align: center
+				padding: 0 14px
+				.label
+					font-size: 13px
+				.value
+					font-weight: 500
+		.button-view
+			background: transparent
+			border: none
+			width: 100%
+			color: white
+			background: $blue
+			padding: 0.9em
+			font-size: 17px
+			font-family: 'Raleway', sans-serif
+			white-space: nowrap
+			font-weight: 300
