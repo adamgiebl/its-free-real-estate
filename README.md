@@ -1,1 +1,1 @@
-![alt text](https://adamgiebl.github.io/its-free-real-estate/meme.jfif)
+![alt text](https://adamgiebl.github.io/its-free-real-estate/meme.gif)
