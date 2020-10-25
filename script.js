@@ -14,7 +14,7 @@ renderHouses = (data) => {
   });
 };
 
-fetch("http://javasquipt.com/wp-json/wp/v2/house")
+fetch("https://javasquipt.com/wp-json/wp/v2/house")
   .then((res) => res.json())
   .then((data) => {
     renderHouses(data);
